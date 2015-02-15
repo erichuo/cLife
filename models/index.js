@@ -6,6 +6,9 @@ mongoose.connect(config.db, function (err) {
     console.error('connect to %s error: ', config.db, err.message);
     process.exit(1);
   }
+  else {
+	  console.log('connecting to %s: ', config.db);
+  }
 });
 
 // models
